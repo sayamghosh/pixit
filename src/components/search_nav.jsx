@@ -3,6 +3,7 @@ import { IoSearch } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Search_Nav({ query }) {
   const [search, setSearch] = useState(query);
@@ -12,6 +13,7 @@ export default function Search_Nav({ query }) {
 
   return (
     <nav className="flex sticky top-0 w-full justify-between border-none u items-center px-4 py-2 overflow-hidden text-black bg-white">
+      <Link href={"/"}>
       <div id="Site Logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +40,7 @@ export default function Search_Nav({ query }) {
           ></path>
         </svg>
       </div>
+      </Link>
 
       <div
         id="Search Bar"
