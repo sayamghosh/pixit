@@ -11,7 +11,7 @@ export default function Search_Nav({ query }) {
   };
 
   return (
-    <nav className="flex justify-between border-none u items-center px-4 py-2 overflow-hidden text-black bg-white">
+    <nav className="flex sticky top-0 w-full justify-between border-none u items-center px-4 py-2 overflow-hidden text-black bg-white">
       <div id="Site Logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"

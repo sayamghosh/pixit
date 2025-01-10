@@ -5,7 +5,7 @@ export default async function page({ params }) {
   const { id } = await params;
 
   return (
-    <div className="w-full h-full bg-slate-100 pb-5">
+    <div className="w-full h-full bg-slate-100 pb-5 relative">
       <Search_Nav query={id} />
       <Cards type={"search"} query={id} />
     </div>
