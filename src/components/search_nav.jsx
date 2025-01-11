@@ -2,14 +2,15 @@
 import { IoSearch } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Search_Nav({ query }) {
   const [search, setSearch] = useState(query);
+  const router = useRouter();
   const handleSearch = (e) => {
     e.preventDefault();
-    window.location.href = `/search/${search}`;
+    router.push(`/search/${search}`);
   };
 
   return (

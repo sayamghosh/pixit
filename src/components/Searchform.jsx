@@ -2,12 +2,14 @@
 import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function Searchform() {
   const [search, setSearch] = useState("");
+  const router = useRouter();
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `/search/${search}`;
+    router.push(`/search/${search}`);
   };
   return (
     <div className="w-full flex h-screen items-center justify-center px-4 sm:px-10 lg:px-15">
