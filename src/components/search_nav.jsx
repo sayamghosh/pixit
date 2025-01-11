@@ -9,6 +9,7 @@ export default function Search_Nav({ query }) {
   const [search, setSearch] = useState(query);
   const handleSearch = (e) => {
     e.preventDefault();
+    window.location.href = `/search/${search}`;
   };
 
   return (
