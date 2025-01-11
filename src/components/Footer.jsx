@@ -68,14 +68,6 @@ export default function Footer() {
                 <a className="flex select-none text-lg text-black border-2 border-slate-300 rounded-lg py-1 justify-center w-full" href="#">Wallpaper</a>
             </div>
         </div>
-        <div className="text-zinc-800 w-full flex justify-center mt-10">
-            <div className="text-center">
-                <h3 className="text-lg">A passion project of Amit Ghosh ❤️</h3>
-                <h4>Made in collaboration with Mriganka and Sayam</h4>
-                <h3>© 2025 Pixit</h3>
-            </div>
-            
-        </div>
   </div>
 
   );
