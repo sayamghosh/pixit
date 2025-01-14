@@ -23,7 +23,7 @@ export default function Card({ data }) {
   return (
     <div
       style={{ backgroundImage: `url(${data.src.landscape})` }}
-      className={`cursor-pointer h-72 w-full rounded-lg flex bg-cover bg-center group `}
+      className={`cursor-pointer h-72 w-full rounded-lg flex bg-cover bg-center group overflow-hidden`}
     >
       <div className="hidden group-hover:flex transition-all flex-col justify-between w-full">
         <div className="w-full flex justify-end p-2">
