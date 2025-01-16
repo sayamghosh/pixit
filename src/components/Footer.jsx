@@ -68,6 +68,7 @@ export default function Footer() {
                 <a className="flex select-none text-lg text-black border-2 border-slate-300 rounded-lg py-1 justify-center w-full" href="#">Wallpaper</a>
             </div>
         </div>
+        <h1>Something Changed</h1>
   </div>
 
   );
